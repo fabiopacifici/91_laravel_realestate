@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Guests;
 
 use App\Http\Controllers\Controller;
+use App\Models\House;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function index()
     {
+        dd(House::all());
         return view('home');
     }
     public function about()
